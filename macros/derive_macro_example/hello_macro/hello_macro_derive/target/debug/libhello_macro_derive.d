@@ -1,0 +1,1 @@
+/home/doggy/rust_workplace/Rust-in-Ethereum/macros/derive_macro_example/hello_macro/hello_macro_derive/target/debug/libhello_macro_derive.so: /home/doggy/rust_workplace/Rust-in-Ethereum/macros/derive_macro_example/hello_macro/hello_macro_derive/src/lib.rs
