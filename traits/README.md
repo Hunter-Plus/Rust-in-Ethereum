@@ -87,7 +87,7 @@ fn returns_something() -> impl SonmeType{
 
 ```rust
 pub trait Iterator {
-    type Item;
+    type Item; // <- the output type in <>
 
     fn next(&mut self) -> Option<Self::Item>;
 }
