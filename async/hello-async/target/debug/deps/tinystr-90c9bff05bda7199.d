@@ -1,0 +1,12 @@
+/home/doggy/rust_workplace/Rust-in-Ethereum/async/hello-async/target/debug/deps/libtinystr-90c9bff05bda7199.rmeta: /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/lib.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/macros.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ascii.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/asciibyte.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/error.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/int_ops.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/unvalidated.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ule.rs
+
+/home/doggy/rust_workplace/Rust-in-Ethereum/async/hello-async/target/debug/deps/tinystr-90c9bff05bda7199.d: /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/lib.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/macros.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ascii.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/asciibyte.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/error.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/int_ops.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/unvalidated.rs /home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ule.rs
+
+/home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/lib.rs:
+/home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/macros.rs:
+/home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ascii.rs:
+/home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/asciibyte.rs:
+/home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/error.rs:
+/home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/int_ops.rs:
+/home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/unvalidated.rs:
+/home/doggy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tinystr-0.7.6/src/ule.rs:
