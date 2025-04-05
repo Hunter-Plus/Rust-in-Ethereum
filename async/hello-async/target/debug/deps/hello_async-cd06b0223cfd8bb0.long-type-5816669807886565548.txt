@@ -1,0 +1,4 @@
+tokio_stream::stream_ext::fuse::_::__Origin<'_, tokio_stream::stream_ext::timeout::Timeout<impl Stream<Item = String>>>
+tokio_stream::stream_ext::fuse::Fuse<tokio_stream::stream_ext::timeout::Timeout<impl Stream<Item = String>>>
+tokio_stream::stream_ext::merge::_::__Origin<'_, tokio_stream::stream_ext::timeout::Timeout<impl Stream<Item = String>>, tokio_stream::stream_ext::timeout::Timeout<tokio_stream::stream_ext::map::Map<impl Stream<Item = u32>, {closure@src/main.rs:266:45: 266:52}>>>
+tokio_stream::stream_ext::merge::Merge<tokio_stream::stream_ext::timeout::Timeout<impl Stream<Item = String>>, tokio_stream::stream_ext::timeout::Timeout<tokio_stream::stream_ext::map::Map<impl Stream<Item = u32>, {closure@src/main.rs:266:45: 266:52}>>>
