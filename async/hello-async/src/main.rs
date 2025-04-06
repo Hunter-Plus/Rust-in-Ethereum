@@ -273,6 +273,40 @@ fn main() {
             }
         }
     });
+
+    // merging streams with threads
+    trpl::run(async {
+        let messages = get_messages_with_delay().timeout(Duration::from_millis(200));
+        // we must convert u32 to string when merging
+        let intervals = get_intervals_with_threads()
+            .map(|count| format!("Interval: {count}"))
+            .throttle(Duration::from_millis(100))
+            .timeout(Duration::from_secs(10));
+        let merged = messages.merge(intervals).take(20);
+        let mut merged_stream = pin!(merged);
+        while let Some(result) = merged_stream.next().await {
+            match result {
+                Ok(message) => println!("Merged Message:{message}"),
+                Err(reason) => eprintln!("Problem: {reason:?}"),
+            }
+        }
+    });
+
+    // mixing thread and future
+    let (tx, mut rx) = trpl::channel();
+
+    thread::spawn(move || {
+        for i in 1..11 {
+            tx.send(i).unwrap();
+            thread::sleep(Duration::from_secs(1));
+        }
+    });
+
+    trpl::run(async {
+        while let Some(message) = rx.recv().await {
+            println!("{message}");
+        }
+    });
 }
 
 fn slow(name: &str, ms: u64) {
@@ -327,6 +361,28 @@ fn get_intervals() -> impl Stream<Item = u32> {
         loop {
             trpl::sleep(Duration::from_millis(1)).await;
             count += 1;
+            if let Err(send_error) = tx.send(count) {
+                eprintln!("Could not send interval {count}: {send_error}");
+                break;
+            };
+        }
+    });
+
+    ReceiverStream::new(rx)
+}
+
+// using threading rather async tasks
+fn get_intervals_with_threads() -> impl Stream<Item = u32> {
+    let (tx, rx) = trpl::channel();
+
+    // This is *not* `trpl::spawn` but `std::thread::spawn`!
+    thread::spawn(move || {
+        let mut count = 0;
+        loop {
+            // Likewise, this is *not* `trpl::sleep` but `std::thread::sleep`!
+            thread::sleep(Duration::from_millis(1));
+            count += 1;
+
             if let Err(send_error) = tx.send(count) {
                 eprintln!("Could not send interval {count}: {send_error}");
                 break;
