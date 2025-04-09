@@ -27,8 +27,8 @@ fn main() {
             None => println!("Its title could not be parsed."),
         }
     });
-    // async with concurrence
 
+    // async with concurrence
     trpl::run(async {
         let handle = trpl::spawn_task(async {
             for i in 1..5 {
@@ -38,7 +38,7 @@ fn main() {
         });
 
         for i in 1..10 {
-            println!("hi number {i} from the second JoinHandle task!");
+            println!("hi number {i} from the second concurrent JoinHandle task!");
             trpl::sleep(Duration::from_millis(100)).await;
         }
 
